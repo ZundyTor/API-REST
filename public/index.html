@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Página de Inicio</h1>
+    <div id="inicioContainer">
+        <button id="insertar" class="actionButton">Insertar Información</button>
+        <button id="consultar" class="actionButton">Consultar Información</button>
+    </div>
+
+    <script>
+        document.getElementById('insertar').addEventListener('click', function() {
+            window.location.href = 'insertar.html';
+        });
+
+        document.getElementById('consultar').addEventListener('click', function() {
+            window.location.href = 'consultar.html';
+        });
+    </script>
+</body>
+</html>

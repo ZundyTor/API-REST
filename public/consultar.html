@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Información</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Consulta de Información</h1>
+    <form id="consultaForm">
+        <label for="consultaType">Selecciona el tipo de consulta:</label>
+        <select id="consultaType" name="consultaType">
+            <option value="estudiantes">Estudiantes</option>
+            <option value="profesores">Profesores</option>
+            <option value="asignaturas">Asignaturas</option>
+        </select>
+        
+        <label for="codigo">Ingresa el código (opcional):</label>
+        <input type="text" id="codigo" name="codigo">
+        
+        <button id="consultaSubmit" type="submit">Consultar</button>
+    </form>
+
+    <div id="resultados"></div>
+
+    <button id="volverInicio" class="actionButton">Volver a Inicio</button>
+
+    <script>
+        document.getElementById('volverInicio').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+    <script src="script2.js"></script>
+</body>
+</html>
